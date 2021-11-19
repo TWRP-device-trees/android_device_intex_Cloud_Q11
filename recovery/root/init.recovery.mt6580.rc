@@ -1,0 +1,5 @@
+# For creating symlink for bootdevice
+
+on fs
+    wait /dev/block/platform/mtk-msdc.0/11120000.msdc0
+    symlink /dev/block/platform/mtk-msdc.0/11120000.msdc0 /dev/block/bootdevice
